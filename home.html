@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Cocktails, Mix, Mix One, MixMe, Mix Me, Mix Me One">
+        <meta name="description" content="Verliebt in ein Cocktail">
+        <meta name="author" content="Nico Miebach">
+        
+        <title>Hey "Name"!</title>
+        
+		<link rel="icon" href="/assets/favicon32.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/assets/favicon32.png" type="image/x-icon">
+        <link rel="stylesheet" href="/assets/css/Bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    </head>
+    
+    <body>
+		<header>
+            <!-- NAVBAR -->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">MixOne</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Rezepte</a></li>
+                        <li><a href="">Editor</a></li>
+                        <li><a href="">Finder</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" style="margin-right:15px;">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp; "Name" &nbsp;<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Profil</a></li>
+                                <li><a href="/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Abmelden</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+			</nav>
+			<div class="clearfix"></div>
+			
+            <!-- SEARCH FORM -->
+			<div class="jumbotron" id="grad">
+				<div class="container">
+					<h1>Search Cocktail</h1>
+					<div class="input-group">
+					  <input type="text" class="form-control" id="cocktail-search" placeholder="Search for any Cocktail...">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" id="cocktail-search-btn" type="button">Go!</button>
+					  </span>
+					</div>
+				</div>
+			</div>
+		</header>
+			
+		<main>
+            <div class="content">
+                <h3 style="margin:0;padding:0;">Best Drinks</h3>
+				<hr>
+				<div class="row">
+				   <div id="Carousel-1" class="carousel slide">
+					   <!-- SLIDE PAGES -->
+						<ol class="carousel-indicators">
+							<li data-target="#Carousel-1" data-slide-to="0" class="active"></li>
+							<li data-target="#Carousel-1" data-slide-to="1"></li>
+							<li data-target="#Carousel-1" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+
+							<div class="item active">
+								<div class="row-fluid">
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Mojito.jpg" alt="Mojito" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Mojito</h3>
+												<p>Classic, Longdrink, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Caipirinha.jpg" alt="Caipirinha" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Caipirinha</h3>
+												<p>Herb, Longdrink, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/pina-colada.jpg" alt="Piña Colada" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Piña Colada</h3>
+												<p>Cremig, Fancy, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/sex-on-the-beach.jpg" alt="Sex on the Beach" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Sex on the Beach</h3>
+												<p>Fancy, Fruchtig, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/mai-tai.jpg" alt="Mai Tai" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Mai Tai</h3>
+												<p>Fancy, Säuerlich, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Tequila-sunrise.jpg" alt="Tequila Sunrise"Tequila Sunrise style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Tequila Sunrise</h3>
+												<p>Fruchtig, Longdrink, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row-fluid">
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/sour.jpg" alt="Sour" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Sour</h3>
+												<p>Classic, Longdrink, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Long-Island-Iced-Tea.jpg" alt="Long Island Iced Tea" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Long Island Iced Tea</h3>
+												<p>Herb, Longdrink, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/moscow-mule.jpg" alt="Moscow Mule" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Moscow Mule</h3>
+												<p>Longdrink, Mittelstark, Würzig</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/daiquiri.jpg" alt="Daiquiri" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Daiquiri</h3>
+												<p>Classic, Mittelstark, Säuerlich</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Martini.jpg" alt="Martini" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Martini</h3>
+												<p>Classic, Herb, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/cosmopolitan.jpg" alt="Cosmopolitan" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Cosmopolitan</h3>
+												<p>Fancy, Mittelstark, Säuerlich</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row-fluid">
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/cuba_libre.jpg" alt="Cuba Libre" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Cuba Libre</h3>
+												<p>Longdrink, Mittelstark, Säuerlich</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/fizz.jpg" alt="Fizz" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Fizz</h3>
+												<p>Herb, Longdrink, Mittelstark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/spritz.jpg" alt="Spritz" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Spritz</h3>
+												<p>Pre Dinner, Säuerlich, Wenig Alkohol</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Margarita.jpg" alt="Margarita" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Margarita</h3>
+												<p>Classic, Säuerlich, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/zombie.png" alt="Zombie" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Zombie</h3>
+												<p>Fancy, Fruchtig, Stark</p>
+												<p><a href="/cocktails/Zombie.php" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-12">
+										<div class="thumbnail">
+											<a href="#x"><img src="/assets/img/Cocktails/256x256/Negroni.jpg" alt="Negroni" style="max-width:100%;"></a>
+											<div class="caption">
+												<h3>Negroni</h3>
+												<p>Herb, Pre Dinner, Stark</p>
+												<p><a href="#" class="btn btn-primary btn-block" role="button">Zum Rezept</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+        <script src="/assets/js/jQuery.js"></script>
+        <script src="/assets/js/bootstrap.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#Carousel-1').carousel({
+					interval: 4000
+				})
+			});
+		</script>
+    </body>
+</html>

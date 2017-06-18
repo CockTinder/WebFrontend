@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Cocktails, Mix, Mix One, MixMe, Mix Me, Mix Me One">
+        <meta name="description" content="Verliebt in ein Cocktail">
+        <meta name="author" content="Nico Miebach">
+            
+        <title>MixOne - Login</title>
+        
+		<link rel="icon" href="/assets/favicon32.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/assets/favicon32.png" type="image/x-icon">
+        <link rel="stylesheet" href="/assets/css/Bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="/assets/css/Bootstrap-Theme.css" type="text/css">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    </head>
+	
+    <body class="login">
+        <div class="signin-form">
+            <div class="container">
+			
+			<a id="icon" href=""><img src="/assets/favicon.png" alt="Icon"></a>
+			<h1>Sign in to MixOne</h1>
+			
+                <form class="form-signin" method="post" id="login-form">
+                    
+        
+                    <div class="form-group">
+						<label for="email">Username or email address</label>
+                        <input type="text" id="email" class="form-control" name="txt_uname_email" required>
+                        <span id="check-e"></span>
+                    </div>
+        
+                    <div class="form-group">
+					<label for="pass">Password</label>
+                        <input type="password" id="pass" class="form-control" name="txt_password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" name="btn-login" class="btn btn-success btn-block">Sign in</button>
+                    </div>
+                </form>
+				
+				<form class="form-signin">
+					<p class="login">New to MixOne? &nbsp;<a href="/sign-up.php">Sign up</a></p>
+				</form>
+            </div>
+        </div>
+        
+        <script src="/assets/js/jQuery.js"></script>
+        <script src="/assets/js/bootstrap.js"></script>
+    </body>
+</html>

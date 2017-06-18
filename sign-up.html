@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Cocktails, Mix, Mix One, MixMe, Mix Me, Mix Me One">
+        <meta name="description" content="Verliebt in ein Cocktail">
+        <meta name="author" content="Nico Miebach">
+        
+        <title>MixOne: Sign up</title>
+        
+		<link rel="icon" href="/assets/favicon32.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/assets/favicon32.png" type="image/x-icon">
+        <link rel="stylesheet" href="/assets/css/Bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="/assets/css/Bootstrap-Theme.css" type="text/css">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    </head>
+	
+	<body class="login">
+		<div class="signin-form">
+			<div class="container">
+			
+			<a id="icon" href="/"><img src="/assets/favicon.png" alt="Icon"></a>
+			<h1>Sign up to MixOne</h1>
+			
+				<form method="post" class="form-signin">
+					
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" id="username" class="form-control" name="txt_uname" value="<?php if(isset($error)){echo $uname;}?>">
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<input type="text" id="email" class="form-control" name="txt_umail" value="<?php if(isset($error)){echo $umail;}?>">
+					</div>
+			
+					<div class="form-group">
+						<label for="pass">Password</label>
+						<input type="password" id="pass" class="form-control" name="txt_upass">
+					</div>
+					
+					<p>By clicking on "Create an account" below, you are agreeing to the <a href="">Terms of Service</a> and the <a href="">Privacy Policy</a>.</p>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block" name="btn-signup">Create an account</button>
+					</div>
+				</form>
+				
+				<form class="form-signin">
+					<p class="login">Already have one? <a href="/index.php">Sign In</a></p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
